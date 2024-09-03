@@ -1,0 +1,65 @@
+/* General Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #fff;
+  color: #5151E5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5151E5;
+  color: #fff;
+}
+
+/* Response Container Styling */
+.response-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.response-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}

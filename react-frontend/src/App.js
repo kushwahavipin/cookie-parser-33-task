@@ -6,14 +6,14 @@ function App() {
   const [response, setResponse] = useState(null);
 
   const setCookie = async () => {
-    const res = await axios.get('http://localhost:5000/set-cookie', {
+    const res = await axios.get('https://cookie-parser-33-task-backend.vercel.app/set-cookie', {
       withCredentials: true
     });
     setResponse(res.data);
   };
 
   const getCookie = async () => {
-    const res = await axios.get('http://localhost:5000/get-cookie', {
+    const res = await axios.get('https://cookie-parser-33-task-backend.vercel.app/get-cookie', {
       withCredentials: true
     });
     setResponse(res.data);
@@ -21,7 +21,7 @@ function App() {
 
   const getStatusCodeResponse = async (code) => {
     try {
-      const res = await axios.get(`http://localhost:5000/status/${code}`, {
+      const res = await axios.get(`https://cookie-parser-33-task-backend.vercel.app/status/${code}`, {
         withCredentials: true
       });
       setResponse(res.data);
